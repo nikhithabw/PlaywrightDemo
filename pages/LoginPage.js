@@ -11,7 +11,8 @@ exports.LoginPage=class LoginPage
 
     async gotoLoginPage()
     {
-        await this.page.goto('http://localhost:3000/');
+        //await this.page.goto('http://localhost:3000/');
+        await this.page.goto('https://www.perplexity.ai/');
     }
    
     async login(username,password)
