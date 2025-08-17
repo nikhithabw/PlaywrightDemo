@@ -25,6 +25,17 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+        # 🚀 Start the app in the background
+      - name: Start Application
+        run: npm run dev &
+      
+      # ✅ Wait until app is ready (port 3000)
+      - name: Wait for http://localhost:3000
+        uses: jakejarvis/wait-action@v0.1.1
+        with:
+          url: 'http://localhost:3000'
+          timeout: 60 # seconds
+
       - name: Run Playwright tests
         run: npx playwright test
 
