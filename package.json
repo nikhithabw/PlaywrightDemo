@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-   "dev": "vite",
-  "test": "npx playwright test"
+    "dev": "vite",
+    "test": "npx playwright test"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.54.2",
-    "@types/node": "^24.1.0"
+    "@types/node": "^24.1.0",
+    "vite": "^7.1.2"
   },
   "dependencies": {
     "xlsx": "^0.18.5"
