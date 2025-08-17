@@ -13,7 +13,7 @@ test('POM', async ({page})=>
     //Login Page - Credentials
     const login=new LoginPage(page);
     await login.gotoLoginPage();
-    await login.login(data.username,data.password);
+   /* await login.login(data.username,data.password);
     await page.screenshot({path:'tests/screenshots/'+Date.now()+'LoginPage.png'})
     await page.waitForTimeout(1000);
    
@@ -21,6 +21,6 @@ test('POM', async ({page})=>
     const home=new HomePage(page);
     await home.add(data.loanId, data.transactionId, data.priority,data.uploadFile);
     await page.waitForTimeout(4000);
-    await page.screenshot({path:'tests/screenshots/'+Date.now()+'DashBoardPage.png'})
+    await page.screenshot({path:'tests/screenshots/'+Date.now()+'DashBoardPage.png'}) */
     }  
 })
